@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Variables and Data Types</title>
+    <style>
+      pre {
+        background-color: rgb(236, 236, 236);
+        padding: 20px;
+        width: 50%;
+      }
+      h3:hover {
+        color: rgb(13, 37, 37);
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+    <script>
+      function runVars() {
+        let thisVariableValueWillChange = 12;
+        // Adding a console to view what this will output to Chrome's console window
+        console.log(thisVariableValueWillChange);
+        //Const often written in all caps letting other Developers know that this variable will never change
+        const UNCHANGING_VARIABLE_NAME = "This will never change";
+        console.log(UNCHANGING_VARIABLE_NAME);
+        thisVariableValueWillChange = 23;
+        console.log(thisVariableValueWillChange);
+        UNCHANGING_VARIABLE_NAME = "I'm going to change this";
+        console.log(UNCHANGING_VARIABLE_NAME);
+      }
+    </script>
+    <!-- <script src="./variables-data-types.js"></script> -->
+  </head>
+  <body>
+    <button onclick="runVars()">Run Vars</button>
+    <h1>Primitive Data types(common)</h1>
+    <ul>
+      <li>
+        <h3>Number</h3>
+        <span>
+          <pre>
+          const WIDTH = 20;
+          const HEIGHT = 500;
+          const xCord = -3;
+        </pre
+          >
+        </span>
+      </li>
+      <li>
+        <h3>String</h3>
+        <span>
+          <pre>
+        const NULL_VALUE = "Atlanta, Georgia";
+        const USER = "Lois Harris";
+        const errorMessage = "It looks like you didn't complete the form";
+      </pre
+          >
+        </span>
+      </li>
+      <li>
+        <h3>null</h3>
+        <span class="hide">
+          <pre>
+          const NULL_VALUE = null;
+      </pre
+          >
+        </span>
+      </li>
+
+      <li>
+        <h3>undefined</h3>
+        <span class="hide">
+          <pre>
+        let userName;
+        let placeToGoOnVacation;
+        const thisVarIsAConst; // will cause issues
+      </pre
+          >
+        </span>
+      </li>
+      <li>
+        <h3>Boolean</h3>
+        <span class="hide">
+          <pre>
+        let isTheFirstNameFieldValid = false;
+        let canTheUserAdvance = true;
+        let doesTheUserHaveAccess = false;
+      </pre
+          >
+        </span>
+      </li>
+    </ul>
+    <h1>Complex Data types</h1>
+    <ul>
+      <li><em>Object</em> Will discuss next class</li>
+      <li><em>Arrays are Objects</em> Will discuss next class</li>
+      <li>
+        <h3>Function</h3>
+        <span>
+          <pre>
+          function getParameter(width, height){
+            return width * height;
+          }
+          // put the values in order
+        </pre
+          >
+        </span>
+      </li>
+    </ul>
+  </body>
+</html>
